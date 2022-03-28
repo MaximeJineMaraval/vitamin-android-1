@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_screen"
+            android:text="Top Image Cards"
+            android:textAppearance="@style/TextAppearance.Vitamin.Headline6"
+            tools:ignore="HardcodedText" />
+
+        <com.decathlon.vitamin.cards.VitaminTopImageCardView
+            android:id="@+id/topImageCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_screen"
+            app:vtmnCardView_description="Card description, this text can display on multiple lines."
+            app:vtmnCardView_imageSrc="@drawable/android_image"
+            app:vtmnCardView_title="Card Title" />
+
+        <com.decathlon.vitamin.cards.VitaminTopImageCardView
+            android:id="@+id/topImageCustomCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_screen"
+            app:vtmnCardView_customLayout="@layout/card_custom_layout"
+            app:vtmnCardView_imageSrc="@drawable/android_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_screen"
+            android:text="Without Image Cards"
+            android:textAppearance="@style/TextAppearance.Vitamin.Headline6"
+            tools:ignore="HardcodedText" />
+
+        <com.decathlon.vitamin.cards.VitaminWithoutImageCardView
+            android:id="@+id/withoutImageCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_screen"
+            app:vtmnCardView_description="Card description, this text can display on multiple lines."
+            app:vtmnCardView_title="Card Title" />
+
+        <com.decathlon.vitamin.cards.VitaminWithoutImageCardView
+            android:id="@+id/withoutImageCustomCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_screen"
+            app:vtmnCardView_customLayout="@layout/card_custom_layout" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>

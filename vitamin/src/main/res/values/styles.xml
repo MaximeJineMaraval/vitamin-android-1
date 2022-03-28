@@ -84,7 +84,8 @@
         <item name="actionBarStyle">@style/Widget.Vitamin.TopBar</item>
         <item name="actionModeStyle">@style/Widget.Vitamin.ActionMode</item>
         <item name="actionOverflowButtonStyle">@style/Widget.Vitamin.ActionButton.Overflow</item>
-        <item name="android:actionOverflowButtonStyle">@style/Widget.Vitamin.ActionButton.Overflow</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.Vitamin.ActionButton.Overflow
+        </item>
         <item name="actionBarTheme">@style/ThemeOverlay.Vitamin.ActionBar</item>
         <item name="searchViewStyle">@style/Widget.Vitamin.SearchView</item>
         <item name="bottomNavigationStyle">@style/Widget.Vitamin.BottomNavigation</item>
@@ -119,7 +120,8 @@
         <item name="priceAlertMedium">@style/Widget.Vitamin.Price.Alert.Medium</item>
         <item name="priceAlertLarge">@style/Widget.Vitamin.Price.Alert.Large</item>
         <item name="priceStrikethroughSmall">@style/Widget.Vitamin.Price.Strikethrough.Small</item>
-        <item name="priceStrikethroughMedium">@style/Widget.Vitamin.Price.Strikethrough.Medium</item>
+        <item name="priceStrikethroughMedium">@style/Widget.Vitamin.Price.Strikethrough.Medium
+        </item>
         <item name="priceStrikethroughLarge">@style/Widget.Vitamin.Price.Strikethrough.Large</item>
         <!-- Dividers -->
         <item name="materialDividerStyle">@style/Widget.Vitamin.Divider.FullBleed</item>
@@ -127,5 +129,8 @@
         <item name="dividerInset">@style/Widget.Vitamin.Divider.Inset</item>
         <item name="dividerMiddle">@style/Widget.Vitamin.Divider.Middle</item>
         <item name="android:listDivider">?attr/vtmnBorderSecondary</item>
+        <!-- Cards -->
+        <item name="vtmnTopImageCardViewStyle">@style/Widget.Vitamin.Card.TopImage</item>
+        <item name="vtmnWithoutImageCardViewStyle">@style/Widget.Vitamin.Card.WithoutImage</item>
     </style>
 </resources>

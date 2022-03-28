@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Define TopImageCardView style for theme -->
+    <attr name="vtmnTopImageCardViewStyle" format="reference" />
+    <!-- Define WithoutImageCardView style for theme -->
+    <attr name="vtmnWithoutImageCardViewStyle" format="reference" />
+
+    <declare-styleable name="AVitaminCardView">
+        <!-- Define the card title text -->
+        <attr name="vtmnCardView_title" format="string" />
+        <!-- Define the card description text -->
+        <attr name="vtmnCardView_description" format="string" />
+        <!-- Define the textAppearance for the title-->
+        <attr name="vtmnCardView_titleTextAppearance" format="reference" />
+        <!-- Define the textAppearance for the description-->
+        <attr name="vtmnCardView_descriptionTextAppearance" format="reference" />
+        <!-- Define the layout resource for the customLayout-->
+        <attr name="vtmnCardView_customLayout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AVitaminImageCardView">
+        <!-- Define the image resource to display -->
+        <attr name="vtmnCardView_imageSrc" format="reference|color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Vitamin.Card">
+        <item name="vtmnCardView_titleTextAppearance">?attr/textAppearanceHeadline6</item>
+        <item name="vtmnCardView_descriptionTextAppearance">?attr/textAppearanceBody3</item>
+    </style>
+
+    <style name="Widget.Vitamin.Card.TopImage" />
+
+    <style name="Widget.Vitamin.Card.WithoutImage" />
+
+</resources>
