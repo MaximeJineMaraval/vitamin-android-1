@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- {@deprecated Use Theme.Vitamin.DayNight instead.} -->
+    <style name="Theme.Vitamin" parent="Theme.Vitamin.DayNight" />
+
+</resources>

@@ -24,7 +24,7 @@ implementation("com.decathlon.vitamin:skeleton:<version>")
 ```
 
 ```xml
-<style name="AppTheme" parent="Theme.Vitamin" />
+<style name="AppTheme" parent="Theme.Vitamin.DayNight" />
 ```
    
 ```xml
@@ -52,7 +52,7 @@ implementation("com.decathlon.vitamin:skeleton:<version>")
 <com.decathlon.vitamin.skeleton.VitaminSkeletonFrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.Vitamin">
+    android:theme="@style/Theme.Vitamin.DayNight">
 
     <com.decathlon.vitamin.skeleton.VitaminSkeletonRoundedView
     ...
@@ -86,7 +86,7 @@ implementation("com.decathlon.vitamin:skeleton:<version>")
 ```
 
 ```xml
-<style name="AppTheme" parent="Theme.Vitamin" />
+<style name="AppTheme" parent="Theme.Vitamin.DayNight" />
 ```
 
 ```xml
@@ -115,7 +115,7 @@ implementation("com.decathlon.vitamin:skeleton:<version>")
 <com.decathlon.vitamin.skeleton.VitaminSkeletonFrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.Vitamin">
+    android:theme="@style/Theme.Vitamin.DayNight">
 
     <com.decathlon.vitamin.skeleton.VitaminSkeletonRectangularView
         android:layout_width="80dp"
@@ -153,7 +153,7 @@ implementation("com.decathlon.vitamin:skeleton:<version>")
 ```
 
 ```xml
-<style name="AppTheme" parent="Theme.Vitamin" />
+<style name="AppTheme" parent="Theme.Vitamin.DayNight" />
 ```
 
 ```xml
@@ -175,7 +175,7 @@ implementation("com.decathlon.vitamin:skeleton:<version>")
 <com.decathlon.vitamin.skeleton.VitaminSkeletonFrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.Vitamin">
+    android:theme="@style/Theme.Vitamin.DayNight">
 
     <com.decathlon.vitamin.skeleton.VitaminSkeletonRoundedView
         android:layout_width="80dp"

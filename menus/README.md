@@ -13,6 +13,12 @@ By inheriting the Vitamin theme in your app, you just have to use the default
 implementation("com.decathlon.vitamin:vitamin:<version>")
 ```
 
+```xml
+<style name="Your.AppTheme" parent="Theme.Vitamin.DayNight">
+    ...
+</style>
+```
+
 ### Menu
 
 ```kotlin
@@ -58,60 +64,21 @@ listPopupWindow.show()
 
 ## Usage in standalone
 
-If you don't want to inherit the full Vitamin theme (and all the Vitamin components) on your
+If you don't want to inherit the full Vitamin theme on your
 entire app, you can use this component in standalone.
 
-### Version 1
-
-Inherit the Base Vitamin theme in your app to have the right colors and fonts and link the 
-Vitamin popup styles. You can now use Popup components as seen previously.
-
 ```kotlin
-implementation("com.decathlon.vitamin:menus:<version>")
-```
-
-```xml
-<resources>
-    <style name="AppTheme" parent="Base.Theme.Vitamin">
-        ...
-        <!-- Vitamin Dropdown -->
-        <item name="vtmnDropDownItemStyle">@style/Widget.Vitamin.Dropdown.Text</item>
-        <!-- Material Dropdown -->
-        <item name="android:spinnerDropDownItemStyle">?attr/vtmnDropDownItemStyle</item>
-        <item name="spinnerDropDownItemStyle">?attr/vtmnDropDownItemStyle</item>
-
-        <!-- Vitamin Menu -->
-        <item name="vtmnMenuStyle">@style/Widget.Vitamin.Menu</item>
-        <item name="vtmnListMenuStyle">@style/Widget.Vitamin.Menu.List</item>
-        <!-- Material Menu -->
-        <item name="popupMenuStyle">?attr/vtmnMenuStyle</item>
-        <item name="listPopupWindowStyle">?attr/vtmnListMenuStyle</item>
-    </style>
-</resources>
-```
-
-### Version 2
-
-If you don't want to override all the menu components of your app, you can inherit the Base Vitamin theme but only style the components you want.
-
-```kotlin
-implementation("com.decathlon.vitamin:menus:<version>")
-```
-
-```xml
-<resources>
-    <style name="AppTheme" parent="Base.Theme.Vitamin">
-        ...
-    </style>
-</resources>
+implementation("com.decathlon.vitamin:vitamin:<version>")
 ```
 
 ```kotlin
+val contextThemeWrapper = ContextThemeWrapper(requireContext(), R.style.Theme_Vitamin_DayNight)
+
 // Popup
-val popup = PopupMenu(requireContext(), v, Gravity.NO_GRAVITY, R.attr.popupMenuStyle, R.style.Widget_Vitamin_Menu)
+val popup = PopupMenu(contextThemeWrapper, v, Gravity.NO_GRAVITY, R.attr.popupMenuStyle, R.style.Widget_Vitamin_Menu)
 
 // ListPopup
-val listPopup = ListPopupWindow(requireContext(), null, R.attr.listPopupWindowStyle, R.style.Widget_Vitamin_Menu_List)
+val listPopup = ListPopupWindow(contextThemeWrapper, null, R.attr.listPopupWindowStyle, R.style.Widget_Vitamin_Menu_List)
 ```
 
 ## Dropdown List Menu

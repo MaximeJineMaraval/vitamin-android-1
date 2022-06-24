@@ -15,7 +15,7 @@ implementation("com.decathlon.vitamin:vitamin:<version>")
 ```
 
 ```xml
-<style name="Your.AppTheme" parent="Theme.Vitamin">
+<style name="Your.AppTheme" parent="Theme.Vitamin.DayNight">
     ...
 </style>
 ```
@@ -49,7 +49,7 @@ implementation("com.decathlon.vitamin:vitamin:<version>")
 ```
 
 ```xml
-<style name="Your.AppTheme" parent="Theme.Vitamin">
+<style name="Your.AppTheme" parent="Theme.Vitamin.DayNight">
     ...
 </style>
 ```
@@ -71,35 +71,8 @@ You can use the three dividers variants :
 
 ## Usage in standalone
 
-If you don't want to inherit the full Vitamin theme (and all the Vitamin components) on your entire app, you can use this component in standalone.
-
-### Version 1
-
-Inherit the Base Vitamin theme in your app to have the right colors and fonts and link the Vitamin dividers styles.
-You can now use the dividers as seen previously.
-
-```kotlin
-implementation("com.decathlon.vitamin:vitamin:<version>")
-```
-
-```xml
-<resources>
-    <style name="Your.AppTheme" parent="Base.Theme.Vitamin">
-        ...
-        <!-- Vitamin Dividers -->
-        <item name="vtmnDividerFullBleedStyle">@style/Widget.Vitamin.Divider.FullBleed</item>
-        <item name="vtmnDividerInsetStyle">@style/Widget.Vitamin.Divider.Inset</item>
-        <item name="vtmnDividerMiddleStyle">@style/Widget.Vitamin.Divider.Middle</item>
-        <!-- Material Dividers -->
-        <item name="materialDividerStyle">?attr/vtmnDividerFullBleed</item>
-        <item name="android:listDivider">?attr/vtmnBorderColorSecondary</item>
-    </style>
-</resources>
-```
-
-### Version 2
-
-If you don't want to use Vitamin colors and font on all your app, you can directly use the Vitamin theme on the component's parent view.
+If you don't want to inherit the full Vitamin theme on your entire app, you can use this component
+in standalone, in applying the theme on the component's parent view.
 
 ```kotlin
 implementation("com.decathlon.vitamin:vitamin:<version>")
@@ -109,7 +82,7 @@ implementation("com.decathlon.vitamin:vitamin:<version>")
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:theme="@style/Theme.Vitamin">
+    android:theme="@style/Theme.Vitamin.DayNight">
     <!-- Use this view context to create the DividerItemDecoration -->
     
     <!-- Put here your recyclerView or divider views -->

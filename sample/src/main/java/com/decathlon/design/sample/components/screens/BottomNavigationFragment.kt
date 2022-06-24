@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.decathlon.design.sample.databinding.FragmentBottomNavigationBinding
 
-class BottomNavigationFragment: ComponentFragment() {
+class BottomNavigationFragment : ComponentFragment() {
     private lateinit var binding: FragmentBottomNavigationBinding
 
     override fun onCreateView(
